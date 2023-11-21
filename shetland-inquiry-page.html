@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shetland Co.</title>
+    <link href="shetland-inquiry-page.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title" class="larger-font">The Shetland Co.</h1>
+    <p id="description">Submit a Review or Comment: </p>
+    <form id="survey-form" action="/submit-survey" method="post">
+        <fieldset class="info-fieldset">
+            <label for="first-name" id="first-name-label">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name Here" required>
+
+            <label for="last-name" id="last-name-label">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name Here" required>
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Here" required>
+      </fieldset>
+      <fieldset class="tenant-type-fieldset">
+        <legend>Tenant Type </legend>
+        <label for="current-tenant"><input id="current-tenant" type="radio" name="tenant-type" class="inline" checked />Current Tenant</label>
+        <label for="past-tenant"><input id="past-tenant" type="radio" name="tenant-type" class="inline" />Past Tenant</label>
+        <label for="prospective-tenant"><input id="prospective-tenant" type="radio" name="tenant-type" class="inline" />Prospective Tenant</label>
+      </fieldset>
+      <fieldset class="number-occupants-fieldset">
+        <legend>Number of Occupants: </legend>
+          <label for="number-occupants"><input id="number-occupants" type="number" name="number-occupants" min="1" max="5" /></label>
+      </fieldset>
+      <fieldset class="pets-fieldset">
+        <legend>Pets? </legend>
+          <label for="pets-yes"><input id="pets-yes" type="radio" name="pets-type" class="inline" />Yes</label>
+          <label for="pets-no"><input id="pets-no" type="radio" name="pets-type" class="inline" />No</label>
+      </fieldset>
+      <fieldset class="recommend-fieldset">
+        <legend>Would You Recommend The Shetland Co.? </legend>
+          <label for="recommend-yes"><input id="recommend-yes" type="radio" name="recommend-type" class="inline" />Yes</label>
+          <label for="recommend-no"><input id="recommend-no" type="radio" name="recommend-type" class="inline" />No</label>
+          <label for="recommend-notapp"><input id="recommend-notapp" type="radio" name="recommend-type" class="inline" />Not Applicable</label>
+      </fieldset>
+      <fieldset class="comment-fieldset">
+        <legend>Leave A Comment: </legend>
+          <label for="comment"><textarea id="comment" name="comment" rows="6" cols="90" placeholder="Write Your Message Here..."></textarea></label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html> 

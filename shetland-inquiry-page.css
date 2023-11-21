@@ -1,0 +1,99 @@
+body {
+    background: lightgray; /* Adjust color */
+    font-family: tahoma, sans-serif;
+    padding: 20px;
+    margin: 0;
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+}
+
+h1, p {
+    text-align: center;
+    margin: 0 0 0.1em 0;
+}
+
+.larger-font {
+    font-size: 2em;
+}
+
+form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#title {
+    margin-bottom: 0.2em;
+}
+
+#description {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    border: none;
+    border-bottom: 3px solid #333;
+    margin-top: 0.5rem;
+}
+
+#survey-form .tenant-type-fieldset label,
+#survey-form .number-occupants-fieldset label,
+#survey-form .pets-fieldset label,
+#survey-form .recommend-fieldset label {
+    margin-left: 15px;
+}
+
+label {
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="submit"] {
+    margin-right: 0.5rem;
+}
+
+textarea {
+    width: 90%;
+    max-width: 600px;
+    margin-left: 0.5rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.25rem;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 1rem;
+    margin-left: 44rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
